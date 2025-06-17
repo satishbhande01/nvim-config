@@ -20,4 +20,6 @@ keymap.set("i", "<C-s>", "<Esc>:w<CR>a", opts)  -- Save in insert mode
 --tree sitter
 keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", opts)
 
---telescope (find files and in files)
+--Remove Highlights
+keymap.set("n", "<leader>hr", ":nohlsearch<CR>", { desc = "Remove search highlight" })
+
