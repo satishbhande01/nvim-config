@@ -1,0 +1,5 @@
+*.swp         # Vim swap files
+*.bak         # Backup files
+*.log         # Log files
+node_modules/ # Plugin dependencies
+.cache/       # Cache folders
