@@ -5,7 +5,8 @@ return {
     priority = 1000,     -- Load early
     config = function()
       require("catppuccin").setup({
-        flavour = "macchiato", -- or "latte", "frappe", "macchiato"
+        flavour = "mocha", -- or "latte", "frappe", "macchiato"
+				transparent_background = true,
         integrations = {
           treesitter = true,
           lsp_trouble = true,
