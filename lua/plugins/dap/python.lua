@@ -12,6 +12,8 @@ dap.configurations.python = {
     request = 'launch',
     name = "Launch file",
     program = "${file}", -- current buffer
+		console = "integratedTerminal",
+		justMyCode = true,
     pythonPath = function()
       return vim.fn.stdpath("data") .. '/mason/packages/debugpy/venv/bin/python'
     end,
