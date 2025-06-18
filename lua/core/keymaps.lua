@@ -42,8 +42,8 @@ keymap.set("n", "<leader>gh", ":Gitsigns stage_hunk<CR>", { desc = "Stage Git hu
 keymap.set("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", { desc = "Reset Git hunk" })
 keymap.set("n", "<leader>gb", ":Gitsigns blame_line<CR>", { desc = "Blame line" })
 
---DAP close
--- keymap.set("n", "<leader>dq", function()
-  -- require("dap").terminate()
-  -- require("dapui").close()
--- end, { desc = "Quit Debugging and Close DAP UI" })
+-- Copy all (entire buffer)
+keymap.set("n", "<leader>ca", "ggVGy", { desc = "Copy entire buffer" })
+
+-- Cut all (delete entire buffer)
+keymap.set("n", "<leader>cx", "ggVGd", { desc = "Cut entire buffer" })
