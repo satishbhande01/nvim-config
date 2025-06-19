@@ -19,6 +19,14 @@ keymap.set("i", "<C-s>", "<Esc>:w<CR>a", opts)  -- Save in insert mode
 
 --tree sitter
 keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", opts)
+keymap.set("n","<leader>te",function()
+	require("nvim-tree.api").tree.expand_all()
+end, {desc = "Expand Folders in NvimTree"}
+)
+keymap.set("n","<leader>tc",function()
+	require("nvim-tree.api").tree.collapse_all()
+end, {desc = "Collapse Folders in NvimTree"}
+)
 
 --Remove Highlights
 keymap.set("n", "<leader>hr", ":nohlsearch<CR>", { desc = "Remove search highlight" })
