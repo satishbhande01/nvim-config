@@ -12,6 +12,8 @@ keymap.set("n", "<leader>q", ":q<CR>", opts)
 
 -- Normal and Insert mode keymap
 keymap.set("i","kj","<ESC>",opts)
+-- For nvim-terminal (like in case of nvim-r)
+keymap.set("t", "kj", [[<C-\><C-n>]],opts)
 
 --Save using ctrl+s
 keymap.set("n", "<C-s>", ":w<CR>", opts)  -- Save in normal mode
