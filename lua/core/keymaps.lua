@@ -17,7 +17,7 @@ keymap.set("i","kj","<ESC>",opts)
 keymap.set("n", "<C-s>", ":w<CR>", opts)  -- Save in normal mode
 keymap.set("i", "<C-s>", "<Esc>:w<CR>a", opts)  -- Save in insert mode
 
---tree sitter
+--nvim-tree
 keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", opts)
 keymap.set("n","<leader>te",function()
 	require("nvim-tree.api").tree.expand_all()
