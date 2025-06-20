@@ -29,7 +29,7 @@ return {
       local keymap = vim.keymap.set
       keymap("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", { desc = "Next Buffer" })
       keymap("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", { desc = "Previous Buffer" })
-      keymap("n", "<leader>bd", "<Cmd>bdelete<CR>", { desc = "Delete Current Buffer" })
+      keymap("n", "<leader>bq", "<Cmd>bdelete<CR>", { desc = "Delete Current Buffer" })
       keymap("n", "<leader>bp", "<Cmd>BufferLinePick<CR>", { desc = "Pick Buffer" })
     end,
   },
